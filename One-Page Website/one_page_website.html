@@ -31,116 +31,70 @@
 		<!--END HOME-->
 		
 		<!--GALLERY-->
-		<section id="gallery">
-            <div class="container">
-                <h1>Gallery</h1>
-                <div class="flex-container">
-			
-				<!--PHOTO-CONTAINER 1-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_1.jpg" alt="House1">
-						<div class="photo-overlay">
-							<h3>Local Contractors</h3>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 1-->
-				<!--  PHOTO-CONTAINER 2-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_2.jpg" alt="House2">
-						<div class="photo-overlay">
-							<h3>Update your home</h3>
-							<p> Residential Roofing.</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 2-->
-				<!--  PHOTO-CONTAINER 3-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_3.jpg" alt="House3">
-						<div class="photo-overlay">
-							<h3>Update your business</h3>
-							<p>Commercial Roofing.</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 3-->
-				<!--  PHOTO-CONTAINER 4-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_4.jpg" alt="House4">
-						<div class="photo-overlay">
-							<h3>Asphalt shingles</h3>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 4-->
-				<!--  PHOTO-CONTAINER 5-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_5.jpg" alt="House5">
-						<div class="photo-overlay">
-							<h3>Metal Shingles</h3>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 5-->
-				<!--  PHOTO-CONTAINER 6-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_6.jpg" alt="House6">
-						<div class="photo-overlay">
-							<h3>Repair your home</h3>
-							<p> </p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 6-->
-				<!--  PHOTO-CONTAINER 7-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/thumbnail_7.jpg" alt="House7">
-						<div class="photo-overlay">
-							<h3>Painting</h3>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 7-->
-				<!--  PHOTO-CONTAINER 8-->
-				<div class="photo-container">
-					<div class="photo">
-						
-						<img src="./images/thumb/thumbnail_8.jpg" alt="House8">
-						<div class="photo-overlay">
-							<h3>Cover your home</h3>
-							<p> Warranties</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 8-->
-				<!--  PHOTO-CONTAINER 9-->
-				<div class="photo-container">
-					<div class="photo">
-						<img src="./images/thumb/GAF.jpg" alt="House9">
-						<div class="photo-overlay">
-							<h3>Certified</h3>
-							<p> Certified by Manufacturing.</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 9-->
-				
-				
-			</div>
-		</div>
-	</section>
+		<h1 class="heading-padding" id="gallery">GALLERY</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/Thumb/thumbnail_1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images/Thumb/thumbnail_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/Thumb/thumbnail_4.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/Thumb/thumbnail_5.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+<script src="JS/one_page_website.js"></script>
 		<!--END GALLERY-->
 		
 		<!--RSVP-->

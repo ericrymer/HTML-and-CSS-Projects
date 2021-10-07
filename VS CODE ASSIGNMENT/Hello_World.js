@@ -5,4 +5,4 @@ var greeting = 'Hello, World!';
     console.log(greeting2);
 
     var sentence1 = 'Learning how to debug code with the debugger';
-    console.log(sentenceOne);
+    console.log(sentence1);
